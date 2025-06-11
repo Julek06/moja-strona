@@ -1,0 +1,183 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header {
+    position:relative;
+    background: linear-gradient(to bottom, lime, aqua);
+    height: 90vh;
+    overflow: hidden;
+}
+header > *{
+    position: absolute;
+}
+header img{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+header div.witaj {
+    z-index: 1;
+    top: 7%;
+    left: 5%;
+    right: 5%;
+    text-align: center;
+    font-family: "Saira Condensed", sans-serif;
+    font-weight: bold;
+    font-size: 40px;
+    color: white;
+    text-transform: uppercase;
+}
+header h1 {
+    margin-top: 25px;
+    font-size: 20px;
+
+}
+header h2 {
+    font-size: 20px;
+    font-family: "Saira light";
+}
+header button {
+    line-height: 32px;
+    padding: 0 20px;
+    text-transform: uppercase;
+    color: white;
+    background-color: transparent;
+    font-weight: 300;
+    font-size: 12px;
+    border: 2px solid white;
+}
+header button:hover {
+    color: rgb(0, 0, 0);
+    border: 2px solid black;
+    box-shadow: 4px 4px #000000;
+    transition: all 0.2s ease;
+}
+header button:active {
+    box-shadow: 0 2px #27ae60;
+    transform: translateY(2px);
+}
+
+@keyframes migotanie {
+  0%, 100% { background: radial-gradient(circle, lime, aqua); }
+  50%     { background: radial-gradient(circle, aqua, lime); }
+}
+
+header button {
+  animation: migotanie 2s infinite;
+}
+
+@media (orientation: portrait) and (min-width: 360px) {
+    header h1 {
+        font-size: 24px;
+
+    }
+    header h2 {
+        font-size: 24px;
+    }
+    header button {
+        margin-top: 24px;
+        line-height: 40px;
+        font-size: 16px;
+    }
+    header img {
+        max-width: 60%;
+        height: auto;
+    }
+}
+
+@media (orientation: portrait) and (min-width: 410px) {
+    header h1 {
+        font-size: 26px;
+
+    }
+    header h2 {
+        font-size: 24px;
+    }
+    header button {
+        margin-top: 40px;
+        line-height: 50px;
+        font-size: 20px;
+    }
+    header img {
+        right: -5%;
+    }
+}
+
+@media (orientation: portrait) and (min-width: 768px) {
+    header p {
+        font-size: 60px;
+    }
+
+    header h1 {
+        font-size: 32px;
+
+    }
+    header h2 {
+        font-size: 32px;
+    }
+    header button {
+        margin-top: 60px;
+        line-height: 60px;
+        font-size: 24px;
+        cursor: pointer;
+    }
+    header img {
+        right: -5%;
+    }
+}
+
+@media (orientation: landscape) {
+    header img {
+    height: 80%;
+    bottom: 0;
+    right: -5%;
+}
+header div.witaj {
+    top: 15%;
+    left: 7%;
+    right: 48%;
+}
+header button {
+    margin-top: 40px;
+}
+}
+
+@media (orientation: landscape) and (min-width: 640px)
+{
+    header h1 {
+        font-size: 24px;
+    }
+    header h2 {
+        font-size: 24px; 
+    }
+    header button {
+        font-size: 16px;
+        line-height: 40px;
+    }
+}
+
+@media (orientation: landscape) and (min-width: 768px)
+{
+    header h1 {
+        font-size: 24px;
+    }
+    header h2 {
+        font-size: 24px; 
+    }
+    header button {
+        font-size: 16px;
+        line-height: 40px;
+    }
+}
+@media (orientation: landscape) and (min-width: 1024px) {
+    header img {
+    height: 80%;
+    bottom: 0;
+    right: -3.5%;
+}
+}
+section{
+    min-height: 100vh;
+}
